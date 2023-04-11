@@ -1,0 +1,122 @@
+<head>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<div>
+  <div id="mainTitleContainer">
+    <div id="mainTitle">Kohei Horikoshi Wiki</div>
+    <div id="createdBy">Created by Henry Myers</div>
+  </div>
+  <div id="nav">
+    <div id="bio-link" onclick="showTab('bio')" class="nav-child">
+      Biography
+    </div>
+    <div id="works-link" onclick="showTab('works')" class="nav-child">
+      Works
+    </div>
+    <div id="awards-link" onclick="showTab('awards')" class="nav-child">
+      Awards
+    </div>
+    <div id="analysis-link" onclick="showTab('analysis')" class="nav-child">
+      Analysis
+    </div>
+    <div id="citations-link" onclick="showTab('citations')" class="nav-child">
+      Citations
+    </div>
+  </div>
+  <div class="tab" id="bio">
+    <div id="bio-wrap">
+      <div id="bio-text">
+        Kohei Horikoshi was born in the Aichi Prefecture of Japan. He developed
+        a fascination with the fine arts from a young age, and began drawing
+        when he was a small child. After high school he attended Nagoya
+        University of Arts, where he frequently practiced the craft of manga
+        creation outside of the classroom, knowing that his ultimate goal was to
+        become a successful mangaka. His first job in manga was as an assistant
+        to Yasuki Tanaka, writer of the popular manga “Summer Time Rendering.”
+        In 2007, he earned a one-off spot in Shonen Jump, a widely-read manga
+        anthology and magazine. Eventually, he was able to publish his first
+        serialized manga in 2010, “Oumagadoki Zoo.” He has written three
+        different manga series, with the most well-known of the three being a
+        series called “My Hero Academia.” This manga has been one of the most
+        popular mangas of the last decade, spawning numerous spin-offs in the
+        form of tv shows, movies, and video games. It is based in a world where
+        almost everyone has a special power, known as a “Quirk.” Horikoshi has
+        stated that his work is influenced by the manga he read as a child, as
+        well as the superhero comics produced by Marvel.
+      </div>
+      <img src="horikoshi.jpg" />
+    </div>
+  </div>
+  <div class="tab" id="works">
+    <div class="work" style="margin-top: 0">
+      <div style="flex: 1; padding: 0rem 1rem">
+        <div class="work-title">Oumagadoki Zoo (2010 - 2011)</div>
+        <div style="margin-top: 0.5rem" class="work-summary">
+          This manga is centered around a teenage girl Hana Anoi, who has just
+          started her new job at a Zoo. Pretty soon, she realizes that there is
+          something a bit different about this particular zoo. The zoo director,
+          Shina, was cursed by the ghost of a rabbit he killed. He must gather
+          and care for every animal in the world in order to reverse the curse.
+          After realizing this, Hana begins to help Shina in his quest, and her
+          comprehensive knowledge of animals proves to be invaluable.
+        </div>
+      </div>
+      <img src="zoo.png" />
+    </div>
+    <div class="work">
+      <div style="flex: 1; padding: 0rem 1rem">
+        <div class="work-title">Barrage (2012)</div>
+        <div style="margin-top: 0.5rem" class="work-summary">
+          Barrage is set on the planet of Industria, where war wages between
+          aliens and humans. The story starts with a young boy named Astro, who
+          works hard to provide food for his younger siblings. One day, Astro
+          meets a boy who looks and talks just like him -- this boy turns out to
+          be the Prince of Industria, who has run away from home. Upon realizing
+          their striking similarity, the prince asks Astro if he wants to act as
+          his substitute, and Astro accepts!
+        </div>
+      </div>
+      <img src="barrage.jpeg" />
+    </div>
+    <div class="work">
+      <div style="flex: 1; padding: 0rem 1rem">
+        <div class="work-title">My Hero Academia (2014 - Present)</div>
+        <div style="margin-top: 0.5rem" class="work-summary">
+          this series is about
+        </div>
+      </div>
+      <img src="hero.jpeg" />
+    </div>
+    <div style="height: 10rem"></div>
+  </div>
+  <div class="tab" id="awards">Awards</div>
+  <div class="tab" id="analysis">Critical Analysis</div>
+  <div class="tab" id="citations">Citations</div>
+</div>
+
+<script>
+  function setAllDisplayToNone() {
+    document.getElementById("bio").style.display = "none";
+    document.getElementById("works").style.display = "none";
+    document.getElementById("awards").style.display = "none";
+    document.getElementById("analysis").style.display = "none";
+    document.getElementById("citations").style.display = "none";
+    document.getElementById("bio-link").style.backgroundColor = "white";
+    document.getElementById("works-link").style.backgroundColor = "white";
+    document.getElementById("awards-link").style.backgroundColor = "white";
+    document.getElementById("analysis-link").style.backgroundColor = "white";
+    document.getElementById("citations-link").style.backgroundColor = "white";
+    document.getElementById("bio-link").style.color = "black";
+    document.getElementById("works-link").style.color = "black";
+    document.getElementById("awards-link").style.color = "black";
+    document.getElementById("analysis-link").style.color = "black";
+    document.getElementById("citations-link").style.color = "black";
+  }
+
+  function showTab(name) {
+    setAllDisplayToNone();
+    document.getElementById(name).style.display = "block";
+    document.getElementById(name + "-link").style.backgroundColor = "#00264a";
+    document.getElementById(name + "-link").style.color = "white";
+  }
+</script>
