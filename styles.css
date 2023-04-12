@@ -86,3 +86,8 @@ img {
   line-height: 22px;
   font-size: 16;
 }
+
+#wrap {
+  height: 100%;
+  overflow-y: auto;
+}
